@@ -8,7 +8,8 @@ namespace Lab3App
 {
     internal class MagicWand : Tool
     {
-        public void Display() { }
-        public override void DoAction() { }
+        public MagicWand(String description):base(description) { }
+        public override void Display() { Console.WriteLine($"Magic wand {base.Description} is displayed"); }
+        public override void DoAction() { Console.WriteLine($"Magic wand {base.Description} is used"); }
     }
 }

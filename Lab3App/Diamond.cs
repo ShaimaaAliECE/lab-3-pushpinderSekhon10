@@ -8,6 +8,7 @@ namespace Lab3App
 {
     internal class Diamond : Treasure
     {
-        public void Display() { }
+        public Diamond(String description, int score) : base(description, score) { }
+        public override void Display() { Console.WriteLine($"Diamond{base.Description} is displayed"); }
     }
 }

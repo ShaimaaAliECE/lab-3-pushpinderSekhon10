@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class Collectable : Displayable
+    abstract class Collectable : Displayable
     {
-        String Description;
-        CollectionBoard board;
-        public void Display() { }
-        public virtual void AddMe(List<Collectable> lc) 
+        public String Description;
+        public CollectionBoard Board;
+        public Collectable(string description)
         {
-            Console.WriteLine(Description + "Was added");
+            Description = description;
+            
         }
+
+        public virtual void Display() { }
+        public abstract void AddMe(List<Collectable> lc);
     }
 }

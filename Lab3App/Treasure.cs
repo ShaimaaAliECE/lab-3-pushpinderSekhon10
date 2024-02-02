@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class Treasure : Collectable
+    abstract class Treasure : Collectable
     {
         public int Score;
-        public void UpdateTotalScore() { this.Score = 0; }
+        public Treasure(String description, int score) : base(description) { Score = score; }
+        public void UpdateTotalScore() { Board.TotalScore += Score; }
         public override void AddMe(List<Collectable> lc)
         {
-            Console.WriteLine("Was added");
+            Console.WriteLine($"{base.Description} collected, congrats");
+            
         }
     }
 }
