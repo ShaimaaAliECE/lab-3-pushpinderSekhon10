@@ -15,7 +15,7 @@ namespace Lab3App
         public void UpdateTotalScore() { Board.TotalScore += Score; }
         public override void AddMe(List<Collectable> lc)
         {
-            Console.WriteLine($"{base.Description} collected, congrats!!!!!");
+            Console.WriteLine($"{base.Description} collected, congrats!!!!");
             UpdateTotalScore();
             Console.WriteLine($"Total score is updated to: {Board.TotalScore}");
         }
