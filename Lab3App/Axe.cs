@@ -10,6 +10,6 @@ namespace Lab3App
     {
         public Axe(String description):base(description) { }
         public override void Display() { Console.WriteLine($"Axe {base.Description} is displayed"); }
-        public override void DoAction() { Console.WriteLine($"Axe {base.Description} is used"); }
+        public override void DoAction() { Console.WriteLine($"Axe is used"); }
     }
 }

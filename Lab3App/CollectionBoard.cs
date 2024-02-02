@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3App
 {
-    internal class CollectionBoard
+    class CollectionBoard
     {
         public int TotalScore;
         public int TotalValue;

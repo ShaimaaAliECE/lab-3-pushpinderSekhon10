@@ -10,6 +10,6 @@ namespace Lab3App
     {
         public MagicWand(String description):base(description) { }
         public override void Display() { Console.WriteLine($"Magic wand {base.Description} is displayed"); }
-        public override void DoAction() { Console.WriteLine($"Magic wand {base.Description} is used"); }
+        public override void DoAction() { Console.WriteLine($"Magic wand is used"); }
     }
 }

@@ -13,6 +13,7 @@ namespace Lab3App
         public override void AddMe(List<Collectable> lc) 
         {
             Console.WriteLine($"{base.Description} collected, congrats");
+            DoAction();
         }
     }
 }
